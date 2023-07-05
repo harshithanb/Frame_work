@@ -15,6 +15,7 @@ public class Runner1 {
 	public void openappln() {
 		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
 		driver =new ChromeDriver();
+		//base url
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
